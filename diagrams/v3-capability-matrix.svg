@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2800" height="1900" viewBox="0 0 2800 1900">
+  <defs>
+    <style>
+      .bg { fill:#f7f8fa; }
+      .title { font:700 38px "PingFang SC","Microsoft YaHei",sans-serif; fill:#101828; }
+      .subtitle { font:400 20px "PingFang SC","Microsoft YaHei",sans-serif; fill:#475467; }
+      .layer { font:700 23px "PingFang SC","Microsoft YaHei",sans-serif; fill:#344054; }
+      .head { font:700 28px "PingFang SC","Microsoft YaHei",sans-serif; fill:#101828; }
+      .headOffline { font:700 29px "PingFang SC","Microsoft YaHei",sans-serif; fill:#fff; }
+      .cellTitle { font:700 24px "PingFang SC","Microsoft YaHei",sans-serif; fill:#101828; }
+      .cellTitleOffline { font:700 24px "PingFang SC","Microsoft YaHei",sans-serif; fill:#0b3159; }
+      .body { font:500 20px "PingFang SC","Microsoft YaHei",sans-serif; fill:#344054; }
+      .bodyOffline { font:500 20px "PingFang SC","Microsoft YaHei",sans-serif; fill:#173b63; }
+      .spanTitle { font:700 25px "PingFang SC","Microsoft YaHei",sans-serif; fill:#101828; }
+      .spanBody { font:500 21px "PingFang SC","Microsoft YaHei",sans-serif; fill:#344054; }
+      .arrowText { font:700 18px "PingFang SC","Microsoft YaHei",sans-serif; fill:#0b3159; paint-order:stroke; stroke:#fff; stroke-width:7px; stroke-linejoin:round; }
+      .foot { font:500 18px "PingFang SC","Microsoft YaHei",sans-serif; fill:#667085; }
+      .online { fill:#fff; stroke:#98a2b3; stroke-width:2.5; rx:10; }
+      .contract { fill:#f9fafb; stroke:#667085; stroke-width:2.5; stroke-dasharray:10 7; rx:10; }
+      .offline { fill:#dce8f5; stroke:#173b63; stroke-width:4; rx:10; }
+      .span { fill:#eef1f5; stroke:#475467; stroke-width:2.5; rx:10; }
+      .grid { stroke:#d0d5dd; stroke-width:2; stroke-dasharray:5 8; }
+    </style>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L12,6 L0,12 z" fill="#667085"/>
+    </marker>
+    <marker id="arrowBlue" markerWidth="14" markerHeight="14" refX="11" refY="7" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L14,7 L0,14 z" fill="#0b3159"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" width="2400" height="1680"/>
+  <text class="title" x="80" y="62">V3.1 Agent 风控运营迭代中枢｜三列能力矩阵</text>
+  <text class="subtitle" x="80" y="98">纵轴：L0–L5 能力层级　横轴：在线防控 / 共享交互契约 / 离线运营（核心板块）</text>
+
+  <!-- column headers -->
+  <rect x="220" y="125" width="560" height="82" fill="#e4e7ec" stroke="#667085" stroke-width="2.5" rx="10"/>
+  <rect x="820" y="125" width="560" height="82" fill="#f2f4f7" stroke="#667085" stroke-width="2.5" rx="10"/>
+  <rect x="1420" y="125" width="900" height="82" fill="#173b63" stroke="#0b3159" stroke-width="4" rx="10"/>
+  <text class="head" x="500" y="177" text-anchor="middle">在线防控</text>
+  <text class="head" x="1100" y="177" text-anchor="middle">共享交互契约</text>
+  <text class="headOffline" x="1870" y="177" text-anchor="middle">离线运营（核心板块）</text>
+
+  <!-- layer labels -->
+  <text class="layer" x="188" y="305" text-anchor="end">L5</text>
+  <text class="layer" x="188" y="510" text-anchor="end">L4</text>
+  <text class="layer" x="188" y="755" text-anchor="end">L3</text>
+  <text class="layer" x="188" y="1000" text-anchor="end">L2</text>
+  <text class="layer" x="188" y="1245" text-anchor="end">L1</text>
+  <text class="layer" x="188" y="1495" text-anchor="end">L0</text>
+
+  <!-- L5 span -->
+  <rect class="span" x="220" y="235" width="2100" height="135"/>
+  <text class="spanTitle" x="1270" y="283" text-anchor="middle">用户与角色层（横向贯通）</text>
+  <text class="spanBody" x="1270" y="326" text-anchor="middle">调查员　｜　策略运营　｜　模型人员　｜　审批人　｜　审计人员　｜　业务负责人</text>
+
+  <!-- L4 -->
+  <rect class="online" x="220" y="410" width="560" height="205"/>
+  <rect class="contract" x="820" y="410" width="560" height="205"/>
+  <rect class="offline" x="1420" y="410" width="900" height="205"/>
+  <text class="cellTitle" x="250" y="451">产品功能层</text>
+  <text class="body" x="250" y="491"><tspan x="250">在线决策台　｜　处置状态管理</tspan><tspan x="250" dy="36">策略配置台　｜　模型版本台</tspan><tspan x="250" dy="36">名单管理　｜　申诉/举报留位</tspan></text>
+  <text class="cellTitle" x="850" y="451">协作与发布契约</text>
+  <text class="body" x="850" y="491"><tspan x="850">候选提交　｜　证据签认</tspan><tspan x="850" dy="36">人工审批　｜　发布记录</tspan><tspan x="850" dy="36">回滚授权</tspan></text>
+  <text class="cellTitleOffline" x="1450" y="451">运营迭代产品面</text>
+  <text class="bodyOffline" x="1450" y="491"><tspan x="1450">Agent 创建台　｜　任务编排台　｜　调查工作台</tspan><tspan x="1450" dy="36">看板开发台　｜　异常监控台　｜　生命周期台</tspan><tspan x="1450" dy="36">受监督委派，生产写入与最终责任归人</tspan></text>
+
+  <!-- L3 -->
+  <rect class="online" x="220" y="655" width="560" height="205"/>
+  <rect x="820" y="655" width="560" height="205" fill="#e8eef6" stroke="#0b3159" stroke-width="5" rx="10"/>
+  <rect class="offline" x="1420" y="655" width="900" height="205"/>
+  <text class="cellTitle" x="250" y="696">决策与智能层</text>
+  <text class="body" x="250" y="736"><tspan x="250">制裁名单/黑名单硬拦截　｜　场景路由</tspan><tspan x="250" dy="36">规则引擎　｜　实时模型</tspan><tspan x="250" dy="36">决策编排　｜　降级控制</tspan></text>
+  <text class="cellTitle" x="850" y="696">B 三类回流</text>
+  <text class="body" x="850" y="736"><tspan x="850">名单受控生效　｜　特征版本注册</tspan><tspan x="850" dy="36">策略/模型发布门禁　｜　人工审批</tspan></text>
+  <text class="cellTitleOffline" x="1450" y="696">候选生产与验证</text>
+  <text class="bodyOffline" x="1450" y="736"><tspan x="1450">任务成熟度评估　｜　疑难溯源　｜　候选策略生成</tspan><tspan x="1450" dy="36">模型实验　｜　评测沙箱　｜　发布准备</tspan></text>
+
+  <!-- B arrow, offline to online -->
+  <line x1="2240" y1="833" x2="250" y2="833" stroke="#0b3159" stroke-width="7" marker-end="url(#arrowBlue)"/>
+  <text class="arrowText" x="1100" y="824" text-anchor="middle">B 主线：人工审批后驱动在线规则模型迭代</text>
+
+  <!-- L2 -->
+  <rect class="online" x="220" y="900" width="560" height="205"/>
+  <rect class="contract" x="820" y="900" width="560" height="205"/>
+  <rect class="offline" x="1420" y="900" width="900" height="205"/>
+  <text class="cellTitle" x="250" y="941">特征与数据层</text>
+  <text class="body" x="250" y="981"><tspan x="250">在线特征服务　｜　业务白名单特征</tspan><tspan x="250" dy="36">特征版本　｜　实时评分</tspan><tspan x="250" dy="36">决策快照　｜　风险分流</tspan></text>
+  <text class="cellTitle" x="850" y="941">A 不可变事件快照</text>
+  <text class="body" x="850" y="981"><tspan x="850">总体基线　｜　代表性抽样　｜　独立对照</tspan><tspan x="850" dy="36">风险增补　｜　追加证据　｜　样本版本</tspan></text>
+  <text class="cellTitleOffline" x="1450" y="941">证据、评测与数据质量</text>
+  <text class="bodyOffline" x="1450" y="981"><tspan x="1450">快照证据库　｜　特征开发台　｜　标签候选池</tspan><tspan x="1450" dy="36">独立对账　｜　黄金评测集　｜　数据质量仲裁</tspan></text>
+
+  <!-- A arrow, online to offline -->
+  <line x1="250" y1="1078" x2="2240" y2="1078" stroke="#667085" stroke-width="4" marker-end="url(#arrow)"/>
+  <text class="arrowText" x="1100" y="1069" text-anchor="middle">A：在线事实与版本基线 → 无偏回放与可复现调查</text>
+
+  <!-- L1 -->
+  <rect class="online" x="220" y="1145" width="560" height="205"/>
+  <rect class="contract" x="820" y="1145" width="560" height="205"/>
+  <rect class="offline" x="1420" y="1145" width="900" height="205"/>
+  <text class="cellTitle" x="250" y="1186">接入与集成层</text>
+  <text class="body" x="250" y="1226"><tspan x="250">事件接入　｜　风控引擎调用　｜　处置指令下发</tspan><tspan x="250" dy="36">执行回执对账　｜　风险队列接入　｜　闭环边界接入</tspan></text>
+  <text class="cellTitle" x="850" y="1186">受控交互约束</text>
+  <text class="body" x="850" y="1226"><tspan x="850">版本约束　｜　权限边界　｜　证据留痕</tspan><tspan x="850" dy="36">确定性校验　｜　审批状态　｜　审计记录</tspan></text>
+  <text class="cellTitleOffline" x="1450" y="1186">离线接入与回传</text>
+  <text class="bodyOffline" x="1450" y="1226"><tspan x="1450">快照接收　｜　风险队列接入　｜　外部数据接入</tspan><tspan x="1450" dy="36">批处理调度　｜　结果回传　｜　边界案件接入</tspan></text>
+
+  <!-- vertical dependency arrows -->
+  <line x1="500" y1="370" x2="500" y2="400" stroke="#667085" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="1100" y1="370" x2="1100" y2="400" stroke="#667085" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="1870" y1="370" x2="1870" y2="400" stroke="#173b63" stroke-width="4" marker-end="url(#arrowBlue)"/>
+  <line x1="500" y1="615" x2="500" y2="645" stroke="#667085" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="1100" y1="615" x2="1100" y2="645" stroke="#667085" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="1870" y1="615" x2="1870" y2="645" stroke="#173b63" stroke-width="4" marker-end="url(#arrowBlue)"/>
+  <line x1="500" y1="860" x2="500" y2="890" stroke="#667085" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="1100" y1="860" x2="1100" y2="890" stroke="#667085" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="1870" y1="860" x2="1870" y2="890" stroke="#173b63" stroke-width="4" marker-end="url(#arrowBlue)"/>
+  <line x1="500" y1="1105" x2="500" y2="1135" stroke="#667085" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="1100" y1="1105" x2="1100" y2="1135" stroke="#667085" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="1870" y1="1105" x2="1870" y2="1135" stroke="#173b63" stroke-width="4" marker-end="url(#arrowBlue)"/>
+
+  <!-- L0 span -->
+  <rect class="span" x="220" y="1390" width="2100" height="195"/>
+  <text class="spanTitle" x="1270" y="1438" text-anchor="middle">基础设施与治理层（横向贯通）</text>
+  <text class="spanBody" x="1270" y="1482" text-anchor="middle">计算引擎　｜　存储与版本仓库　｜　模型部署　｜　监控告警　｜　批处理调度　｜　配额成本</text>
+  <text class="spanBody" x="1270" y="1524" text-anchor="middle">横向治理：模型　｜　数据　｜　策略　｜　权限　｜　审计　｜　秒级回滚</text>
+  <text class="foot" x="1270" y="1563" text-anchor="middle">Agent 治理工具仅读；生产写入、成熟度升级、灰度扩量和最终责任归人</text>
+  <line x1="500" y1="1350" x2="500" y2="1380" stroke="#667085" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="1100" y1="1350" x2="1100" y2="1380" stroke="#667085" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="1870" y1="1350" x2="1870" y2="1380" stroke="#173b63" stroke-width="4" marker-end="url(#arrowBlue)"/>
+
+  <text class="foot" x="80" y="1642">箭头语义：纵向为层间依赖；A 为在线 → 离线；B 为离线 → 在线，且必须经过确定性门禁与人工审批。</text>
+</svg>

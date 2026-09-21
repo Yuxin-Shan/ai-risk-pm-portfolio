@@ -1,0 +1,269 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1560 1292" width="1560" height="1292" font-family="Noto Sans SC" role="img" aria-labelledby="title desc">
+  <title id="title">低保真线框 · 实时监控与案件详情</title>
+  <desc id="desc">实时监控看板、下钻案件样本列表、案件详情的在线调查轨迹,以及待人工介入队列。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F7F9FC"/>
+      <stop offset="1" stop-color="#EEF2F7"/>
+    </linearGradient>
+    <linearGradient id="frame" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#FBFCFE"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#1B3352" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect x="0" y="0" width="1560" height="1292" fill="url(#bg)"/>
+  <circle cx="160" cy="100" r="60" fill="#2F6BFF" opacity="0.05"/>
+  <circle cx="1370" cy="1050" r="70" fill="#12B39A" opacity="0.05"/>
+
+  <text x="96" y="72" font-size="30" font-weight="700" fill="#12233A">实时监控与案件详情 · 低保真线框</text>
+  <text x="96" y="104" font-size="15" font-weight="500" fill="#5B7A9B">在线侧主看板 · 下钻 · 在线 Agent 调查轨迹 · 待人工介入队列</text>
+
+  <!-- ============ 帧 1:看板 ============ -->
+  <g>
+    <rect x="96" y="136" width="1368" height="286" rx="14" fill="url(#frame)" stroke="#C7D4E4" stroke-width="1.5" filter="url(#shadow)"/>
+    <rect x="96" y="136" width="1368" height="46" rx="14" fill="#EEF2F7"/>
+    <rect x="96" y="168" width="1368" height="14" fill="#EEF2F7"/>
+    <text x="124" y="166" font-size="17" font-weight="700" fill="#12233A">实时监控</text>
+    <rect x="280" y="152" width="104" height="26" rx="7" fill="#E7EEF9"/>
+    <text x="296" y="170" font-size="12" font-weight="600" fill="#1A3A5C">近 1 小时</text>
+    <rect x="1280" y="152" width="156" height="26" rx="7" fill="#FFF4E5" stroke="#E8C87A" stroke-width="1"/>
+    <text x="1296" y="170" font-size="12" font-weight="600" fill="#7A5410">待人工介入 12 笔</text>
+
+    <!-- 7 个指标卡 -->
+    <rect x="124" y="204" width="184" height="96" rx="10" fill="#F4F7FB" stroke="#DCE5F0" stroke-width="1"/>
+    <text x="140" y="232" font-size="12" font-weight="600" fill="#5B7A9B">实时命中率</text>
+    <text x="140" y="264" font-size="24" font-weight="700" fill="#12233A">4.2%</text>
+    <text x="140" y="286" font-size="11" font-weight="500" fill="#8A9BB0">M-01 · 状态量</text>
+
+    <rect x="320" y="204" width="184" height="96" rx="10" fill="#F4F7FB" stroke="#DCE5F0" stroke-width="1"/>
+    <text x="336" y="232" font-size="12" font-weight="600" fill="#5B7A9B">转 Agent 率</text>
+    <text x="336" y="264" font-size="24" font-weight="700" fill="#12233A">11.8%</text>
+    <text x="336" y="286" font-size="11" font-weight="500" fill="#8A9BB0">M-02 · 下降</text>
+
+    <rect x="516" y="204" width="184" height="96" rx="10" fill="#F4F7FB" stroke="#DCE5F0" stroke-width="1"/>
+    <text x="532" y="232" font-size="12" font-weight="600" fill="#5B7A9B">裁决时延 P95</text>
+    <text x="532" y="264" font-size="24" font-weight="700" fill="#12233A">38s</text>
+    <text x="532" y="286" font-size="11" font-weight="500" fill="#8A9BB0">M-03 · 下降</text>
+
+    <rect x="712" y="204" width="184" height="96" rx="10" fill="#F4F7FB" stroke="#DCE5F0" stroke-width="1"/>
+    <text x="728" y="232" font-size="12" font-weight="600" fill="#5B7A9B">拦截率</text>
+    <text x="728" y="264" font-size="24" font-weight="700" fill="#12233A">37.5%</text>
+    <text x="728" y="286" font-size="11" font-weight="500" fill="#8A9BB0">M-04 · 状态量</text>
+
+    <rect x="908" y="204" width="184" height="96" rx="10" fill="#F4F7FB" stroke="#DCE5F0" stroke-width="1"/>
+    <text x="924" y="232" font-size="12" font-weight="600" fill="#5B7A9B">转人工率</text>
+    <text x="924" y="264" font-size="24" font-weight="700" fill="#12233A">2.1%</text>
+    <text x="924" y="286" font-size="11" font-weight="500" fill="#8A9BB0">M-05 · 下降</text>
+
+    <rect x="1104" y="204" width="152" height="96" rx="10" fill="#F4F7FB" stroke="#DCE5F0" stroke-width="1"/>
+    <text x="1120" y="232" font-size="12" font-weight="600" fill="#5B7A9B">工具调用失败率</text>
+    <text x="1120" y="264" font-size="24" font-weight="700" fill="#12233A">0.6%</text>
+    <text x="1120" y="286" font-size="11" font-weight="500" fill="#8A9BB0">M-06 · 下降</text>
+
+    <rect x="1264" y="204" width="172" height="96" rx="10" fill="#F4F7FB" stroke="#DCE5F0" stroke-width="1"/>
+    <text x="1280" y="232" font-size="12" font-weight="600" fill="#5B7A9B">积压时长 P90</text>
+    <text x="1280" y="264" font-size="24" font-weight="700" fill="#12233A">1.4h</text>
+    <text x="1280" y="286" font-size="11" font-weight="500" fill="#8A9BB0">M-17 · 下降</text>
+
+    <rect x="124" y="316" width="560" height="88" rx="10" fill="#FFFFFF" stroke="#DCE5F0" stroke-width="1"/>
+    <text x="140" y="342" font-size="13" font-weight="650" fill="#1A3A5C">裁决分布(点击下钻)</text>
+    <rect x="140" y="358" width="150" height="22" rx="5" fill="#E7EEF9"/>
+    <text x="152" y="374" font-size="11" font-weight="600" fill="#1A3A5C">拦截 37.5%</text>
+    <rect x="300" y="358" width="180" height="22" rx="5" fill="#E7EEF9"/>
+    <text x="312" y="374" font-size="11" font-weight="600" fill="#1A3A5C">放行 60.4%</text>
+    <rect x="490" y="358" width="178" height="22" rx="5" fill="#FFF4E5"/>
+    <text x="502" y="374" font-size="11" font-weight="600" fill="#7A5410">待人工 2.1%</text>
+
+    <rect x="700" y="316" width="356" height="88" rx="10" fill="#FFFFFF" stroke="#DCE5F0" stroke-width="1"/>
+    <text x="716" y="342" font-size="13" font-weight="650" fill="#1A3A5C">抽检入口</text>
+    <text x="716" y="366" font-size="12" font-weight="500" fill="#5B7A9B">翻样本 · 看证据链 · 推翻或确认</text>
+    <rect x="716" y="378" width="112" height="24" rx="7" fill="#12233A"/>
+    <text x="734" y="395" font-size="12" font-weight="650" fill="#FFFFFF">进入抽检</text>
+
+    <rect x="1072" y="316" width="364" height="88" rx="10" fill="#FFFFFF" stroke="#DCE5F0" stroke-width="1"/>
+    <text x="1088" y="342" font-size="13" font-weight="650" fill="#1A3A5C">告警</text>
+    <text x="1088" y="366" font-size="12" font-weight="500" fill="#8A2B2B">昨天 14:00–14:15 拦截率异常上升,已持续 2 个周期</text>
+
+    <text x="124" y="416" font-size="12" font-weight="600" fill="#8A9BB0">F1 · 看板:7 个指标 + 下钻入口 + 抽检入口 + 告警</text>
+  </g>
+
+  <!-- ============ 帧 2:下钻 ============ -->
+  <g>
+    <rect x="96" y="452" width="664" height="400" rx="14" fill="url(#frame)" stroke="#C7D4E4" stroke-width="1.5" filter="url(#shadow)"/>
+    <rect x="96" y="452" width="664" height="44" rx="14" fill="#EEF2F7"/>
+    <rect x="96" y="482" width="664" height="14" fill="#EEF2F7"/>
+    <text x="124" y="481" font-size="15" font-weight="700" fill="#12233A">裁决结果 · 案件样本</text>
+    <text x="640" y="481" font-size="12" font-weight="500" fill="#8A9BB0">142 笔</text>
+
+    <rect x="124" y="510" width="120" height="26" rx="7" fill="#E7EEF9"/>
+    <text x="138" y="528" font-size="12" font-weight="600" fill="#1A3A5C">按结果筛选</text>
+    <rect x="254" y="510" width="120" height="26" rx="7" fill="#F4F7FB" stroke="#DCE5F0" stroke-width="1"/>
+    <text x="268" y="528" font-size="12" font-weight="500" fill="#5B7A9B">按耗时筛选</text>
+
+    <rect x="124" y="546" width="96" height="24" rx="7" fill="#12233A"/>
+    <text x="142" y="563" font-size="12" font-weight="650" fill="#FFFFFF">全部案件</text>
+    <rect x="228" y="546" width="96" height="24" rx="7" fill="#F4F7FB" stroke="#DCE5F0" stroke-width="1"/>
+    <text x="246" y="563" font-size="12" font-weight="600" fill="#1A3A5C">已裁决</text>
+    <text x="338" y="563" font-size="11" font-weight="500" fill="#8A9BB0">切到“已裁决”可看到 Agent 判放行的低置信样本 — 节拍 7b 的入口</text>
+
+    <rect x="124" y="578" width="608" height="26" rx="6" fill="#EEF2F7"/>
+    <text x="136" y="596" font-size="11" font-weight="700" fill="#5B7A9B">案件编号</text>
+    <text x="272" y="596" font-size="11" font-weight="700" fill="#5B7A9B">裁决</text>
+    <text x="360" y="596" font-size="11" font-weight="700" fill="#5B7A9B">置信度</text>
+    <text x="464" y="596" font-size="11" font-weight="700" fill="#5B7A9B">耗时</text>
+    <text x="564" y="596" font-size="11" font-weight="700" fill="#5B7A9B">管控终态</text>
+
+    <rect x="124" y="610" width="608" height="30" rx="6" fill="#F4F7FB"/>
+    <text x="136" y="630" font-size="12" font-weight="500" fill="#3C5570">TR-88213</text>
+    <text x="272" y="630" font-size="12" font-weight="600" fill="#8A2B2B">拦截</text>
+    <text x="360" y="630" font-size="12" font-weight="500" fill="#3C5570">0.87</text>
+    <text x="464" y="630" font-size="12" font-weight="500" fill="#3C5570">41s</text>
+    <text x="564" y="630" font-size="12" font-weight="500" fill="#3C5570">转正式拦截</text>
+
+    <rect x="124" y="644" width="608" height="30" rx="6" fill="#FFFFFF"/>
+    <text x="136" y="664" font-size="12" font-weight="500" fill="#3C5570">TR-88209</text>
+    <text x="272" y="664" font-size="12" font-weight="600" fill="#3C5570">放行</text>
+    <text x="360" y="664" font-size="12" font-weight="500" fill="#3C5570">0.91</text>
+    <text x="464" y="664" font-size="12" font-weight="500" fill="#3C5570">33s</text>
+    <text x="564" y="664" font-size="12" font-weight="500" fill="#3C5570">解除挂起</text>
+
+    <rect x="124" y="678" width="608" height="30" rx="6" fill="#F4F7FB"/>
+    <text x="136" y="698" font-size="12" font-weight="500" fill="#3C5570">TR-88201</text>
+    <text x="272" y="698" font-size="12" font-weight="600" fill="#8A2B2B">拦截</text>
+    <text x="360" y="698" font-size="12" font-weight="500" fill="#3C5570">0.91</text>
+    <text x="464" y="698" font-size="12" font-weight="500" fill="#3C5570">28s</text>
+    <text x="564" y="698" font-size="12" font-weight="500" fill="#3C5570">转正式拦截</text>
+
+    <rect x="124" y="712" width="608" height="30" rx="6" fill="#FFFFFF"/>
+    <text x="136" y="732" font-size="12" font-weight="500" fill="#3C5570">TR-88196</text>
+    <text x="272" y="732" font-size="12" font-weight="600" fill="#7A5410">待人工</text>
+    <text x="360" y="732" font-size="12" font-weight="500" fill="#8A9BB0">—</text>
+    <text x="464" y="732" font-size="12" font-weight="500" fill="#3C5570">—</text>
+    <text x="564" y="732" font-size="12" font-weight="500" fill="#7A5410">保持挂起</text>
+
+    <rect x="124" y="760" width="180" height="30" rx="7" fill="#FFFFFF" stroke="#C7D4E4" stroke-width="1.5"/>
+    <text x="142" y="780" font-size="12" font-weight="600" fill="#3C5570">点任一行看详情 →</text>
+
+    <text x="124" y="822" font-size="12" font-weight="600" fill="#8A9BB0">F2 · 下钻:给案件列表,不给归因结论</text>
+  </g>
+
+  <!-- ============ 帧 3:案件详情 ============ -->
+  <g>
+    <rect x="800" y="502" width="664" height="476" rx="14" fill="url(#frame)" stroke="#C7D4E4" stroke-width="1.5" filter="url(#shadow)"/>
+    <rect x="800" y="502" width="664" height="44" rx="14" fill="#EEF2F7"/>
+    <rect x="800" y="532" width="664" height="14" fill="#EEF2F7"/>
+    <text x="828" y="531" font-size="15" font-weight="700" fill="#12233A">案件详情 · TR-88213</text>
+    <rect x="1356" y="516" width="80" height="26" rx="7" fill="#E7EEF9"/>
+    <text x="1370" y="534" font-size="12" font-weight="600" fill="#1A3A5C">已裁决</text>
+
+    <rect x="828" y="558" width="608" height="62" rx="9" fill="#F4F7FB" stroke="#DCE5F0" stroke-width="1"/>
+    <text x="844" y="582" font-size="12" font-weight="600" fill="#5B7A9B">命中项</text>
+    <text x="844" y="604" font-size="12" font-weight="500" fill="#3C5570">异地登录 + 短时间内多笔转账 · 分流置信度 0.34(低于阈值 0.60) → 转在线 Agent</text>
+
+    <rect x="828" y="632" width="608" height="48" rx="9" fill="#FFF4E5" stroke="#E8C87A" stroke-width="1"/>
+    <text x="844" y="654" font-size="12" font-weight="650" fill="#7A5410">临时管控:已挂起(命中瞬间由确定性层执行)</text>
+    <text x="844" y="672" font-size="11" font-weight="500" fill="#A9873C">分流判定:高疑难 / 低置信 → 转在线 Agent</text>
+
+    <text x="828" y="710" font-size="14" font-weight="700" fill="#12233A">在线调查轨迹</text>
+
+    <rect x="828" y="724" width="608" height="34" rx="7" fill="#F4F7FB"/>
+    <circle cx="846" cy="741" r="6" fill="#2F6BFF"/>
+    <text x="862" y="746" font-size="12" font-weight="500" fill="#3C5570">步骤 1 · 主体信息查询(必需) — 完成</text>
+    <rect x="1330" y="730" width="86" height="22" rx="6" fill="#E7EEF9"/>
+    <text x="1342" y="746" font-size="11" font-weight="600" fill="#1A3A5C">入参摘要</text>
+
+    <rect x="828" y="764" width="608" height="34" rx="7" fill="#FFFFFF"/>
+    <circle cx="846" cy="781" r="6" fill="#2F6BFF"/>
+    <text x="862" y="786" font-size="12" font-weight="500" fill="#3C5570">步骤 2 · 历史交易比对(必需) — 完成</text>
+    <rect x="1330" y="770" width="86" height="22" rx="6" fill="#E7EEF9"/>
+    <text x="1342" y="786" font-size="11" font-weight="600" fill="#1A3A5C">入参摘要</text>
+
+    <rect x="828" y="804" width="608" height="34" rx="7" fill="#F4F7FB"/>
+    <circle cx="846" cy="821" r="6" fill="#E0A93C"/>
+    <text x="862" y="826" font-size="12" font-weight="500" fill="#7A5410">步骤 3 · 名单匹配 — 已跳过(可选工具失败)</text>
+    <rect x="1330" y="810" width="86" height="22" rx="6" fill="#FFF4E5"/>
+    <text x="1342" y="826" font-size="11" font-weight="600" fill="#7A5410">证据缺失</text>
+
+    <rect x="828" y="844" width="608" height="34" rx="7" fill="#FFFFFF"/>
+    <circle cx="846" cy="861" r="6" fill="#2F6BFF"/>
+    <text x="862" y="866" font-size="12" font-weight="500" fill="#3C5570">步骤 4 · 关联关系查询(必需) — 完成</text>
+    <rect x="1330" y="850" width="86" height="22" rx="6" fill="#E7EEF9"/>
+    <text x="1342" y="866" font-size="11" font-weight="600" fill="#1A3A5C">入参摘要</text>
+
+    <rect x="828" y="890" width="608" height="58" rx="9" fill="#FDF2F2" stroke="#E8B4B4" stroke-width="1.5"/>
+    <text x="844" y="914" font-size="14" font-weight="700" fill="#8A2B2B">裁决:拦截 · 置信度 0.87 · 证据 3 条</text>
+    <text x="844" y="936" font-size="11" font-weight="500" fill="#8A2B2B">临时管控终态:转正式拦截(可经抽检推翻并解除)</text>
+
+    <text x="828" y="962" font-size="12" font-weight="600" fill="#8A9BB0">F3 · 案件详情:主线核心,调查轨迹 + 管控终态</text>
+  </g>
+
+  <!-- ============ 帧 4:待人工介入队列 ============ -->
+  <g>
+    <rect x="96" y="860" width="664" height="338" rx="14" fill="url(#frame)" stroke="#C7D4E4" stroke-width="1.5" filter="url(#shadow)"/>
+    <rect x="96" y="860" width="664" height="44" rx="14" fill="#EEF2F7"/>
+    <rect x="96" y="890" width="664" height="14" fill="#EEF2F7"/>
+    <text x="124" y="889" font-size="15" font-weight="700" fill="#12233A">待人工介入队列</text>
+    <rect x="596" y="874" width="140" height="26" rx="7" fill="#FFF4E5" stroke="#E8C87A" stroke-width="1"/>
+    <text x="612" y="892" font-size="12" font-weight="600" fill="#7A5410">积压超阈值告警</text>
+
+    <text x="124" y="928" font-size="12" font-weight="500" fill="#5B7A9B">按类型与积压时长排序</text>
+
+    <rect x="124" y="942" width="608" height="26" rx="6" fill="#EEF2F7"/>
+    <text x="136" y="960" font-size="11" font-weight="700" fill="#5B7A9B">案件编号</text>
+    <text x="276" y="960" font-size="11" font-weight="700" fill="#5B7A9B">未得出裁决的原因</text>
+    <text x="504" y="960" font-size="11" font-weight="700" fill="#5B7A9B">积压时长</text>
+    <text x="620" y="960" font-size="11" font-weight="700" fill="#5B7A9B">操作</text>
+
+    <rect x="124" y="974" width="608" height="32" rx="6" fill="#F4F7FB"/>
+    <text x="136" y="995" font-size="12" font-weight="500" fill="#3C5570">TR-88196</text>
+    <text x="276" y="995" font-size="12" font-weight="500" fill="#8A2B2B">必需工具失败:关联关系查询</text>
+    <text x="504" y="995" font-size="12" font-weight="500" fill="#3C5570">2.3h</text>
+    <rect x="620" y="980" width="72" height="22" rx="6" fill="#12233A"/>
+    <text x="634" y="996" font-size="11" font-weight="650" fill="#FFFFFF">去处置</text>
+
+    <rect x="124" y="1010" width="608" height="32" rx="6" fill="#FFFFFF"/>
+    <text x="136" y="1031" font-size="12" font-weight="500" fill="#3C5570">TR-88191</text>
+    <text x="276" y="1031" font-size="12" font-weight="500" fill="#8A2B2B">取证超时</text>
+    <text x="504" y="1031" font-size="12" font-weight="500" fill="#3C5570">1.6h</text>
+    <rect x="620" y="1016" width="72" height="22" rx="6" fill="#12233A"/>
+    <text x="634" y="1032" font-size="11" font-weight="650" fill="#FFFFFF">去处置</text>
+
+    <rect x="124" y="1046" width="608" height="32" rx="6" fill="#F4F7FB"/>
+    <text x="136" y="1067" font-size="12" font-weight="500" fill="#3C5570">TR-88184</text>
+    <text x="276" y="1067" font-size="12" font-weight="500" fill="#8A2B2B">证据不足以支撑任一裁决</text>
+    <text x="504" y="1067" font-size="12" font-weight="500" fill="#3C5570">0.8h</text>
+    <rect x="620" y="1052" width="72" height="22" rx="6" fill="#12233A"/>
+    <text x="634" y="1068" font-size="11" font-weight="650" fill="#FFFFFF">去处置</text>
+
+    <rect x="124" y="1088" width="608" height="54" rx="9" fill="#F0F5FA" stroke="#DCE5F0" stroke-width="1"/>
+    <text x="140" y="1110" font-size="12" font-weight="650" fill="#1A3A5C">处置:查看已有证据链 → 确认裁决 或 解除管控</text>
+    <text x="140" y="1130" font-size="11" font-weight="500" fill="#5B7A9B">注:可选工具失败的案件不在此队列(Agent 已降级继续)</text>
+
+    <text x="124" y="1170" font-size="12" font-weight="600" fill="#8A9BB0">F4 · 待人工介入:失败分支的承接点</text>
+  </g>
+
+  <!-- ============ 帧 5:抽检推翻 ============ -->
+  <g>
+    <rect x="800" y="1004" width="664" height="208" rx="14" fill="url(#frame)" stroke="#C7D4E4" stroke-width="1.5" filter="url(#shadow)"/>
+    <rect x="800" y="1004" width="664" height="44" rx="14" fill="#EEF2F7"/>
+    <rect x="800" y="1034" width="664" height="14" fill="#EEF2F7"/>
+    <text x="828" y="1033" font-size="15" font-weight="700" fill="#12233A">抽检 · 推翻裁决</text>
+    <text x="1370" y="1033" font-size="12" font-weight="500" fill="#8A9BB0">3/20</text>
+
+    <rect x="828" y="1060" width="608" height="52" rx="9" fill="#F4F7FB" stroke="#DCE5F0" stroke-width="1"/>
+    <text x="844" y="1082" font-size="12" font-weight="600" fill="#5B7A9B">当前样本 TR-88213 · Agent 判定拦截</text>
+    <text x="844" y="1102" font-size="12" font-weight="500" fill="#3C5570">查看证据链后:3 条里仅 1 条可支撑拦截,不足以定案</text>
+
+    <rect x="828" y="1122" width="112" height="32" rx="8" fill="#12233A"/>
+    <text x="846" y="1143" font-size="12" font-weight="650" fill="#FFFFFF">推翻裁决</text>
+    <rect x="950" y="1122" width="96" height="32" rx="8" fill="#FFFFFF" stroke="#C7D4E4" stroke-width="1"/>
+    <text x="968" y="1143" font-size="12" font-weight="600" fill="#3C5570">确认裁决</text>
+    <text x="1060" y="1143" font-size="11" font-weight="500" fill="#8A9BB0">推翻后:管控解除 · 记录留存</text>
+
+    <text x="828" y="1180" font-size="12" font-weight="600" fill="#8A9BB0">F5 · 抽检:人经手的关键动作,样本落入数据集管理</text>
+  </g>
+</svg>

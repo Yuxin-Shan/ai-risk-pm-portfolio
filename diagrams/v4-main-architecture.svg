@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3200" height="2200" viewBox="0 0 3200 2200">
+  <defs>
+    <style>
+      .title { font: 700 44px "PingFang SC","Microsoft YaHei",sans-serif; fill: #101828; }
+      .subtitle { font: 400 22px "PingFang SC","Microsoft YaHei",sans-serif; fill: #475467; }
+      .layer { font: 700 25px "PingFang SC","Microsoft YaHei",sans-serif; fill: #344054; }
+      .head { font: 700 30px "PingFang SC","Microsoft YaHei",sans-serif; fill: #101828; }
+      .headLight { font: 700 32px "PingFang SC","Microsoft YaHei",sans-serif; fill: #ffffff; }
+      .cellTitle { font: 700 25px "PingFang SC","Microsoft YaHei",sans-serif; fill: #101828; }
+      .cellTitleLight { font: 700 26px "PingFang SC","Microsoft YaHei",sans-serif; fill: #ffffff; }
+      .body { font: 500 20px "PingFang SC","Microsoft YaHei",sans-serif; fill: #344054; }
+      .bodyLight { font: 500 21px "PingFang SC","Microsoft YaHei",sans-serif; fill: #f8fafc; }
+      .small { font: 500 18px "PingFang SC","Microsoft YaHei",sans-serif; fill: #475467; }
+      .smallLight { font: 500 18px "PingFang SC","Microsoft YaHei",sans-serif; fill: #eaf1f8; }
+      .arrowA { font: 700 19px "PingFang SC","Microsoft YaHei",sans-serif; fill: #344054; paint-order: stroke; stroke: #ffffff; stroke-width: 8px; stroke-linejoin: round; }
+      .arrowB { font: 700 21px "PingFang SC","Microsoft YaHei",sans-serif; fill: #082f49; paint-order: stroke; stroke: #ffffff; stroke-width: 9px; stroke-linejoin: round; }
+      .legend { font: 500 18px "PingFang SC","Microsoft YaHei",sans-serif; fill: #344054; }
+      .online { fill: #ffffff; stroke: #667085; stroke-width: 3; }
+      .workbench { fill: #f4f7fb; stroke: #49637f; stroke-width: 3; }
+      .offline4 { fill: #244f78; stroke: #0b3159; stroke-width: 5; }
+      .offline3 { fill: #1d456d; stroke: #0b3159; stroke-width: 5; }
+      .offline2 { fill: #153b62; stroke: #082b4c; stroke-width: 5; }
+      .span { fill: #eef1f5; stroke: #667085; stroke-width: 3; }
+      .inner { fill: #f9fafb; stroke: #98a2b3; stroke-width: 2; }
+      .innerDark { fill: #2f5a82; stroke: #88a9c7; stroke-width: 2; }
+      .grid { stroke: #d0d5dd; stroke-width: 2; stroke-dasharray: 7 9; }
+    </style>
+    <marker id="arrowGray" markerWidth="14" markerHeight="14" refX="11" refY="7" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L14,7 L0,14 z" fill="#667085"/>
+    </marker>
+    <marker id="arrowBlue" markerWidth="15" markerHeight="15" refX="12" refY="7.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L15,7.5 L0,15 z" fill="#0b3159"/>
+    </marker>
+  </defs>
+
+  <!-- white canvas intentionally leaves a measurable outer margin -->
+  <rect x="40" y="40" width="3120" height="2120" fill="#ffffff"/>
+
+  <text class="title" x="120" y="92">V4 Agent 风控运营架构｜三列分层能力图</text>
+  <text class="subtitle" x="120" y="130">纵轴 L0–L5；本图表达分层能力，不是逐笔泳道数据流</text>
+
+  <!-- column headers -->
+  <rect x="280" y="160" width="720" height="90" rx="10" fill="#e4e7ec" stroke="#667085" stroke-width="3"/>
+  <rect x="1040" y="160" width="760" height="90" rx="10" fill="#eaf0f6" stroke="#49637f" stroke-width="3"/>
+  <rect x="1840" y="150" width="1240" height="100" rx="10" fill="#0f355b" stroke="#082b4c" stroke-width="5"/>
+  <text class="head" x="640" y="216" text-anchor="middle">在线防控执行面</text>
+  <text class="head" x="1420" y="216" text-anchor="middle">AI 运营工作台</text>
+  <text class="headLight" x="2460" y="214" text-anchor="middle">离线运营中枢</text>
+
+  <!-- layer labels -->
+  <text class="layer" x="238" y="370" text-anchor="end">L5</text>
+  <text class="layer" x="238" y="630" text-anchor="end">L4</text>
+  <text class="layer" x="238" y="980" text-anchor="end">L3</text>
+  <text class="layer" x="238" y="1410" text-anchor="end">L2</text>
+  <text class="layer" x="238" y="1735" text-anchor="end">L1</text>
+  <text class="layer" x="238" y="1925" text-anchor="end">L0</text>
+
+  <!-- L5 full-width -->
+  <rect class="span" x="280" y="290" width="2800" height="140" rx="10"/>
+  <text class="cellTitle" x="1680" y="342" text-anchor="middle">用户与角色层（横向贯通）</text>
+  <text class="body" x="1680" y="390" text-anchor="middle">调查员　｜　策略运营　｜　模型人员　｜　审批人　｜　审计人员　｜　业务负责人</text>
+
+  <!-- L4 -->
+  <rect class="online" x="280" y="470" width="720" height="320" rx="10"/>
+  <text class="cellTitle" x="320" y="516">运行控制面</text>
+  <rect class="inner" x="320" y="548" width="640" height="92" rx="8"/>
+  <text class="body" x="345" y="584">版本管理　｜　运行监控　｜　暂停</text>
+  <text class="body" x="345" y="618">影子　｜　灰度　｜　秒级回滚</text>
+  <rect x="320" y="660" width="640" height="88" rx="8" fill="#fff7e8" stroke="#b26a00" stroke-width="3"/>
+  <text x="640" y="714" text-anchor="middle" style="font:700 23px 'PingFang SC','Microsoft YaHei',sans-serif;fill:#7a3e00;">承接 B 发布产物</text>
+
+  <rect class="workbench" x="1040" y="470" width="760" height="320" rx="10"/>
+  <text class="cellTitle" x="1080" y="516">产品界面层：界面与交互模式</text>
+  <text class="body" x="1080" y="564"><tspan x="1080">任务工作台（待办 / 队列 / 分派）</tspan><tspan x="1080" dy="40">Agent 创建与编排界面</tspan><tspan x="1080" dy="40">调查协作与证据链视图</tspan><tspan x="1080" dy="40">沙箱与评测的操作入口面板</tspan><tspan x="1080" dy="40">人工接管 / 签认 / 审批交互</tspan></text>
+
+  <rect class="offline4" x="1840" y="470" width="1240" height="320" rx="10"/>
+  <text class="cellTitleLight" x="1885" y="516">工作台族</text>
+  <rect class="innerDark" x="1885" y="548" width="1150" height="198" rx="8"/>
+  <text class="bodyLight" x="1920" y="592"><tspan x="1920">调查工作台　｜　运营看板　｜　异常监控</tspan><tspan x="1920" dy="46">特征开发台　｜　实验台　｜　Agent 生命周期</tspan></text>
+  <text class="smallLight" x="1920" y="710">统一呈现离线产物、状态与人工责任边界</text>
+
+  <!-- vertical dependencies L5 to L4 -->
+  <line x1="640" y1="430" x2="640" y2="458" stroke="#667085" stroke-width="3" marker-end="url(#arrowGray)"/>
+  <line x1="1420" y1="430" x2="1420" y2="458" stroke="#667085" stroke-width="3" marker-end="url(#arrowGray)"/>
+  <line x1="2460" y1="430" x2="2460" y2="458" stroke="#0b3159" stroke-width="4" marker-end="url(#arrowBlue)"/>
+
+  <!-- L3 -->
+  <rect class="online" x="280" y="830" width="720" height="300" rx="10"/>
+  <text class="cellTitle" x="320" y="878">确定性决策执行</text>
+  <text class="body" x="320" y="926"><tspan x="320">场景路由　｜　规则引擎　｜　实时模型</tspan><tspan x="320" dy="44">名单硬拦截　｜　决策处置</tspan></text>
+  <text class="small" x="320" y="1058">生成式 LLM / 开放 Agent 不进入默认实时热路径</text>
+
+  <!-- middle column intentionally has no L3/L2 capability body -->
+  <rect x="1040" y="830" width="760" height="300" rx="10" fill="#fbfcfe" stroke="#a8b7c7" stroke-width="2" stroke-dasharray="9 7"/>
+  <text class="cellTitle" x="1420" y="920" text-anchor="middle">界面入口不等于能力本体</text>
+  <text class="body" x="1420" y="970" text-anchor="middle">沙箱 / eval / 验证位于右列 L2 / L3</text>
+  <text class="small" x="1420" y="1012" text-anchor="middle">本列只承载 L4 产品界面与交互</text>
+
+  <rect class="offline3" x="1840" y="830" width="1240" height="300" rx="10"/>
+  <text class="cellTitleLight" x="1885" y="878">决策、智能与验证能力本体</text>
+  <text class="bodyLight" x="1885" y="928"><tspan x="1885">Agent 编排　｜　评测沙箱　｜　模型实验</tspan><tspan x="1885" dy="46">候选生成　｜　成熟度委派　｜　验证 / eval</tspan></text>
+  <rect class="innerDark" x="1885" y="1032" width="1150" height="58" rx="8"/>
+  <text class="smallLight" x="2460" y="1069" text-anchor="middle">闭环机制：误差回收与复盘</text>
+
+  <!-- vertical dependencies L4 to L3 -->
+  <line x1="640" y1="790" x2="640" y2="818" stroke="#667085" stroke-width="3" marker-end="url(#arrowGray)"/>
+  <line x1="2460" y1="790" x2="2460" y2="818" stroke="#0b3159" stroke-width="4" marker-end="url(#arrowBlue)"/>
+
+  <!-- B mainline: offline to online -->
+  <line x1="3000" y1="1190" x2="330" y2="1190" stroke="#0b3159" stroke-width="9" marker-end="url(#arrowBlue)"/>
+  <text class="arrowB" x="1665" y="1178" text-anchor="middle">B 主线：模板 / 策略 / 名单回流 · 确定性门禁 + 人工审批</text>
+
+  <!-- L2 -->
+  <rect class="online" x="280" y="1250" width="720" height="300" rx="10"/>
+  <text class="cellTitle" x="320" y="1298">在线数据与特征执行</text>
+  <text class="body" x="320" y="1348"><tspan x="320">在线特征　｜　特征版本　｜　实时评分</tspan><tspan x="320" dy="44">决策快照　｜　风险分流</tspan></text>
+  <text class="small" x="320" y="1476">只服务在线执行，不承载开发或测试</text>
+
+  <rect x="1040" y="1250" width="760" height="300" rx="10" fill="#fbfcfe" stroke="#a8b7c7" stroke-width="2" stroke-dasharray="9 7"/>
+  <text class="cellTitle" x="1420" y="1368" text-anchor="middle">L2 能力本体归离线运营中枢</text>
+  <text class="small" x="1420" y="1415" text-anchor="middle">工作台通过 L4 入口调用，不在此复制能力</text>
+
+  <rect class="offline2" x="1840" y="1250" width="1240" height="300" rx="10"/>
+  <text class="cellTitleLight" x="1885" y="1298">事实、证据与评测数据能力本体</text>
+  <text class="bodyLight" x="1885" y="1346"><tspan x="1885">不可变事实基线（总体 / 抽样 / 对照 / 风险增补）</tspan><tspan x="1885" dy="44">特征　｜　证据　｜　标签</tspan><tspan x="1885" dy="44">黄金评测集　｜　独立对账闸门</tspan></text>
+  <text class="smallLight" x="1885" y="1492">候选生成与正式评测隔离；结果可重复核验</text>
+
+  <!-- vertical dependencies L3 to L2 -->
+  <line x1="640" y1="1210" x2="640" y2="1238" stroke="#667085" stroke-width="3" marker-end="url(#arrowGray)"/>
+  <line x1="2460" y1="1210" x2="2460" y2="1238" stroke="#0b3159" stroke-width="4" marker-end="url(#arrowBlue)"/>
+
+  <!-- A online to offline -->
+  <line x1="330" y1="1595" x2="3000" y2="1595" stroke="#667085" stroke-width="5" marker-end="url(#arrowGray)"/>
+  <text class="arrowA" x="1665" y="1583" text-anchor="middle">A：在线 → 离线 · 不可变事件快照</text>
+
+  <!-- L1 full-width -->
+  <rect class="span" x="280" y="1640" width="2800" height="150" rx="10"/>
+  <text class="cellTitle" x="1680" y="1690" text-anchor="middle">接入与集成层（横向贯通）</text>
+  <text class="body" x="1680" y="1738" text-anchor="middle">事件与任务接入　｜　版本约束　｜　权限边界　｜　证据留痕　｜　门禁与审批状态　｜　执行回执对账</text>
+
+  <!-- dependencies to L1 -->
+  <line x1="640" y1="1610" x2="640" y2="1628" stroke="#667085" stroke-width="3" marker-end="url(#arrowGray)"/>
+  <line x1="1420" y1="1550" x2="1420" y2="1628" stroke="#667085" stroke-width="3" marker-end="url(#arrowGray)"/>
+  <line x1="2460" y1="1610" x2="2460" y2="1628" stroke="#0b3159" stroke-width="4" marker-end="url(#arrowBlue)"/>
+
+  <!-- L0 full-width -->
+  <rect class="span" x="280" y="1830" width="2800" height="170" rx="10"/>
+  <text class="cellTitle" x="1680" y="1880" text-anchor="middle">基础设施与治理层（横向贯通）</text>
+  <text class="body" x="1680" y="1928" text-anchor="middle">计算与存储　｜　版本仓库　｜　部署与调度　｜　监控告警　｜　权限审计　｜　配额成本</text>
+  <text class="small" x="1680" y="1970" text-anchor="middle">治理工具对 Agent 仅读；生产写入、成熟度升级、灰度扩量与最终责任归人</text>
+  <line x1="1680" y1="1790" x2="1680" y2="1818" stroke="#667085" stroke-width="3" marker-end="url(#arrowGray)"/>
+
+  <!-- legend -->
+  <rect x="280" y="2040" width="2800" height="100" rx="10" fill="#ffffff" stroke="#98a2b3" stroke-width="2"/>
+  <text class="cellTitle" x="315" y="2080">图例</text>
+  <line x1="400" y1="2073" x2="510" y2="2073" stroke="#667085" stroke-width="4" marker-end="url(#arrowGray)"/>
+  <text class="legend" x="535" y="2080">纵向＝层间依赖；A＝在线→离线</text>
+  <line x1="1130" y1="2073" x2="1250" y2="2073" stroke="#0b3159" stroke-width="8" marker-end="url(#arrowBlue)"/>
+  <text class="legend" x="1278" y="2080">B＝离线→在线，且必须经确定性门禁 + 人工审批</text>
+  <text class="legend" x="315" y="2118">任何箭头均不代表 Agent 拥有生产写权；箭头表达能力依赖与受控交付，不代表逐笔数据流。</text>
+</svg>

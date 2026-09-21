@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AI 风控工作台对话窗口视觉样张，使用虚构模拟数据。">
+  <title>对话窗口视觉样张 · 模拟数据</title>
+  <link rel="stylesheet" href="sample-dialog.css">
+</head>
+<body class="theme-dark">
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">R·A</span><span>风险智能台</span></div>
+      <div class="top-center">
+        <div class="crumb"><span>AI 工作台</span><span>/</span><strong>对话窗口</strong></div>
+        <span class="chip simulated">◇ 模拟数据</span>
+      </div>
+      <div class="top-right">
+        <span class="chip">Agent v3.2</span>
+        <span class="status-chip running"><span class="dot"></span>运行正常</span>
+      </div>
+    </header>
+
+    <nav class="sidebar" aria-label="主导航">
+      <section class="nav-group">
+        <div class="nav-title">在线风控</div>
+        <button class="nav-item"><span class="nav-icon">⌁</span>策略引擎配置</button>
+        <button class="nav-item"><span class="nav-icon">⌁</span>实时监控<span class="nav-badge">07</span></button>
+        <button class="nav-item"><span class="nav-icon">◇</span>模型服务</button>
+        <button class="nav-item"><span class="nav-icon">≡</span>名单管理</button>
+        <button class="nav-item"><span class="nav-icon">↥</span>特征发布</button>
+      </section>
+
+      <section class="nav-group">
+        <div class="nav-title">AI 工作台</div>
+        <button class="nav-item active" aria-current="page"><span class="nav-icon">›_</span>对话窗口</button>
+        <button class="nav-item"><span class="nav-icon">⌗</span>实验管理</button>
+        <button class="nav-item"><span class="nav-icon">A</span>Agent 配置</button>
+        <button class="nav-item"><span class="nav-icon">⌘</span>工具台</button>
+        <button class="nav-item"><span class="nav-icon">⇄</span>任务队列<span class="nav-badge">12</span></button>
+        <button class="nav-item"><span class="nav-icon">⌁</span>证据链视图</button>
+        <button class="nav-item"><span class="nav-icon">✓</span>验证报告</button>
+        <button class="nav-item"><span class="nav-icon">↶</span>日志回放</button>
+        <button class="nav-item"><span class="nav-icon">▦</span>数据集管理</button>
+      </section>
+
+      <section class="recent">
+        <div class="nav-title">最近会话</div>
+        <button class="recent-row"><strong>新版提示词对比实验</strong><span>执行中 · 刚刚</span></button>
+        <button class="recent-row"><strong>昨日异常时段回放</strong><span>已完成 · 2 小时前</span></button>
+      </section>
+    </nav>
+
+    <main class="workspace">
+      <header class="workspace-head">
+        <div>
+          <div class="eyebrow">Conversation workspace</div>
+          <h1>对话窗口</h1>
+          <div class="subtitle">一句话发起任务，计划确认后再执行；过程可暂停、改参和回看证据。</div>
+        </div>
+        <div class="head-actions">
+          <button class="btn ghost">新建会话</button>
+          <button class="btn">会话记录</button>
+        </div>
+      </header>
+
+      <section class="conversation" aria-label="当前对话">
+        <div class="message user">
+          <div>
+            <div class="user-bubble">把上周那批转账案件重跑一遍，顺便比一下新改的提示词。</div>
+            <div class="message-meta">你 · 10:24</div>
+          </div>
+        </div>
+
+        <div class="message">
+          <div class="agent-row">
+            <div class="agent-avatar">AI</div>
+            <div class="agent-content">
+              <div class="agent-label">工作台 · 已按确认计划执行</div>
+              <article class="plan-card">
+                <div class="card-head">
+                  <div class="card-title"><span class="index">01</span>执行计划</div>
+                  <span class="chip" style="color:var(--success);border-color:color-mix(in srgb,var(--success) 38%,var(--border));background:var(--success-soft)">✓ 已确认</span>
+                </div>
+                <div class="plan-list">
+                  <div class="plan-step done"><span class="num">01</span><strong>建立实验</strong><span>prompt v3.2 vs v3.1</span></div>
+                  <div class="plan-step active"><span class="num">02</span><strong>载入数据集</strong><span>转账案件 · 3,812 笔</span></div>
+                  <div class="plan-step pending"><span class="num">03</span><strong>两组任务入队</strong><span>基线组 / 候选组</span></div>
+                  <div class="plan-step pending"><span class="num">04</span><strong>生成对比结果</strong><span>输出验证报告</span></div>
+                </div>
+
+                <div class="param-panel" aria-label="参数编辑区">
+                  <div class="field"><label>数据范围</label><input value="上周一 00:00 – 周日 24:00"></div>
+                  <div class="field"><label>追加字段</label><input value="可疑样本的手法特征"></div>
+                  <button class="btn small primary" data-action="save-params">保存并重跑</button>
+                </div>
+              </article>
+
+              <article class="run-card">
+                <div class="run-body">
+                  <div class="run-summary">
+                    <span class="dot" style="color:var(--accent)"></span>
+                    <strong data-run-label>执行中 · 2/4</strong>
+                    <span class="eta">预计 12 分钟</span>
+                  </div>
+                  <div class="progress" aria-label="执行进度 52%"><span></span></div>
+                  <div class="run-foot">
+                    <span data-run-state data-paused="false">当前：候选组载入手法特征 · 10:26:18 更新</span>
+                    <div class="run-actions">
+                      <button class="btn small warning" data-action="pause">暂停</button>
+                      <button class="btn small" data-action="params">追加参数</button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="evidence-card">
+                <button class="evidence-toggle" data-action="evidence" aria-expanded="false">
+                  <div><strong>证据链 · 4 步</strong><span>　3 步完成，1 步执行中</span></div>
+                  <span data-caret>展开 ↓</span>
+                </button>
+                <div class="evidence-body">
+                  <div class="evidence-line"><strong>历史交易比对</strong> · 已完成 · 10:25:04</div>
+                  <div class="evidence-line"><strong>关联关系查询</strong> · 已完成 · 10:25:31</div>
+                  <div class="evidence-line"><strong>手法特征提取</strong> · 已完成 · 10:26:02</div>
+                  <div class="evidence-line waiting"><strong>候选组重跑</strong> · 执行中 · 10:26:18</div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="composer-wrap">
+        <div class="quick-actions">
+          <button class="quick" data-prompt="先停一下，把可疑样本的手法特征也带上">暂停并加参数</button>
+          <button class="quick" data-prompt="把当前证据链展开给我看">查看证据链</button>
+          <button class="quick" data-prompt="这次执行失败的话，从失败步骤重试">设置失败恢复</button>
+        </div>
+        <div class="composer">
+          <textarea aria-label="输入需求" placeholder="继续输入需求，可在执行中追加参数或暂停…"></textarea>
+          <button class="btn primary" data-action="send">发送 ↗</button>
+        </div>
+        <div class="boundary">演示边界：工作台只生成实验、任务与待审批对象，不会直接写入在线侧配置。</div>
+      </footer>
+    </main>
+
+    <aside class="object-rail" aria-label="本次会话对象">
+      <div class="rail-head"><strong>本次会话对象</strong><span>自动沉淀，可回到正式页面查看</span></div>
+      <div class="object-list">
+        <button class="object-item">
+          <span class="object-icon">EX</span>
+          <span class="object-copy"><strong>实验 EXP-2048</strong><span class="object-state">已创建 · 2 个版本</span></span>
+        </button>
+        <button class="object-item">
+          <span class="object-icon">TQ</span>
+          <span class="object-copy"><strong>任务组 TQ-8821</strong><span class="object-state running">执行中 · 1,982 / 3,812</span></span>
+        </button>
+        <button class="object-item">
+          <span class="object-icon">EV</span>
+          <span class="object-copy"><strong>证据链 EV-4517</strong><span class="object-state running">持续写入 · 4 步</span></span>
+        </button>
+        <button class="object-item">
+          <span class="object-icon">RP</span>
+          <span class="object-copy"><strong>验证报告 R-4517</strong><span class="object-state waiting">等待任务完成</span></span>
+        </button>
+      </div>
+      <div class="rail-note"><strong>模拟数据 · 非生产结论</strong>本页 3,812 笔、进度和时间均为虚构演示数据，只用于说明交互流程。</div>
+    </aside>
+  </div>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+  <script>
+    const params = new URLSearchParams(location.search);
+    if (params.get('theme') === 'light') document.body.className = 'theme-light';
+  </script>
+  <script src="sample-dialog.js"></script>
+</body>
+</html>
+

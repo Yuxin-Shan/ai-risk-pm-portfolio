@@ -1,0 +1,31 @@
+{
+  "version": "1.0",
+  "cases": [
+    {"id":"ac-01-strategy-version-detail","page":"strategy-engine.html","query":"?theme=light&state=active","operation":"strategy-version"},
+    {"id":"ac-02-routing-boundary","page":"strategy-engine.html","query":"?theme=light&state=active","operation":"strategy-routing"},
+    {"id":"ac-03-monitor-seven-metrics-drill","page":"realtime-monitor.html","query":"?theme=light&state=investigating","operation":"monitor-drill"},
+    {"id":"ac-04-overturn-to-negative-sample","page":"realtime-monitor.html","query":"?theme=light&state=investigating","operation":"monitor-overturn"},
+    {"id":"ac-07-experiment-passed","page":"experiment-management.html","query":"?theme=light&state=pending","operation":"experiment-passed"},
+    {"id":"ac-07-experiment-insufficient","page":"experiment-management.html","query":"?theme=light&state=pending","operation":"experiment-insufficient"},
+    {"id":"ac-07-experiment-failed","page":"experiment-management.html","query":"?theme=light&state=pending","operation":"experiment-failed"},
+    {"id":"ac-09-model-tool-before-after","page":"model-service.html","query":"?theme=light&scenario=tool-authorization&stage=pendingApproval&object=AUTH-204","operation":"model-tool-approve"},
+    {"id":"ac-10-task-five-states","page":"task-queue.html","query":"?theme=light&state=queued","operation":"task-five-states"},
+    {"id":"ac-10-task-failure-retry","page":"task-queue.html","query":"?theme=light&state=running","operation":"task-retry"},
+    {"id":"ac-11-evidence-direct-missing","page":"evidence-chain.html","query":"?theme=light&state=success","operation":"evidence-direct"},
+    {"id":"ac-11-evidence-backrefs","page":"evidence-chain.html","query":"?theme=light&scenario=tool-authorization&stage=called&object=EVIDENCE-88209","operation":"evidence-backrefs"},
+    {"id":"ac-12-manual-queue-resolution","page":"realtime-monitor.html","query":"?theme=light&state=unassigned","operation":"monitor-manual"},
+    {"id":"ac-13-report-passed-package","page":"validation-report.html","query":"?theme=light&state=passed","operation":"report-package"},
+    {"id":"ac-13-report-failed-disabled","page":"validation-report.html","query":"?theme=light&state=failed","operation":"report-failed"},
+    {"id":"ac-13-model-register-before-after","page":"model-service.html","query":"?theme=light&scenario=agent-registration&stage=packageGenerated&object=REGISTER-4517","operation":"model-register"},
+    {"id":"ac-14-replay-normal-filter","page":"log-replay.html","query":"?theme=light&state=ready","operation":"replay-normal"},
+    {"id":"ac-14-replay-missing","page":"log-replay.html","query":"?theme=light&state=failed&reason=missing","operation":"replay-missing"},
+    {"id":"ac-14-replay-expired","page":"log-replay.html","query":"?theme=light&state=failed&reason=expired","operation":"replay-expired"},
+    {"id":"ac-15-tool-ledger-chain","page":"model-service.html","query":"?theme=light&scenario=tool-authorization&stage=pendingApproval&object=AUTH-204","operation":"ledger-tool"},
+    {"id":"ac-15-agent-ledger-chain","page":"validation-report.html","query":"?theme=light&scenario=agent-registration&stage=packageGenerated&object=REGISTER-4517","operation":"ledger-agent"},
+    {"id":"ac-15-three-line-ledger-chain","page":"log-replay.html","query":"?theme=light&scenario=three-line-handoff&stage=before&object=CASE-4517","operation":"ledger-three-line"},
+    {"id":"ac-16-investigation-success","page":"realtime-monitor.html","query":"?theme=light&state=investigating","operation":"investigation-success"},
+    {"id":"ac-16-investigation-failure","page":"realtime-monitor.html","query":"?theme=light&state=investigating","operation":"investigation-failure"},
+    {"id":"a11-keyboard-primary-path","page":"experiment-management.html","query":"?theme=light&state=pending","operation":"keyboard-primary"},
+    {"id":"a11-url-dark-direct","page":"log-replay.html","query":"?theme=dark&state=completed","operation":"url-dark"}
+  ]
+}

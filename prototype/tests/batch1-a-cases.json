@@ -1,0 +1,53 @@
+{
+  "version": "1.0",
+  "cases": [
+    {
+      "id": "agent-save-new-version",
+      "page": "agent-config.html",
+      "query": "?theme=light&state=validated",
+      "operation": "save-new-version"
+    },
+    {
+      "id": "agent-old-version-readable",
+      "page": "agent-config.html",
+      "query": "?theme=light&state=validated",
+      "operation": "old-version-readable"
+    },
+    {
+      "id": "agent-change-record",
+      "page": "agent-config.html",
+      "query": "?theme=light&state=validated",
+      "operation": "change-record"
+    },
+    {
+      "id": "agent-permission-boundary",
+      "page": "agent-config.html",
+      "query": "?theme=light&state=validated",
+      "operation": "permission-boundary"
+    },
+    {
+      "id": "agent-keyboard-path",
+      "page": "agent-config.html",
+      "query": "?theme=light&state=validated",
+      "operation": "keyboard-path"
+    },
+    {
+      "id": "tool-register-pending-approval",
+      "page": "toolbench.html",
+      "query": "?theme=light&state=draft",
+      "operation": "register-pending-approval"
+    },
+    {
+      "id": "tool-case-call-record",
+      "page": "toolbench.html",
+      "query": "?theme=light&state=approved&scenario=tool-authorization&stage=called&object=EVIDENCE-88209",
+      "operation": "case-call-record"
+    },
+    {
+      "id": "tool-unauthorized-disabled",
+      "page": "toolbench.html",
+      "query": "?theme=light&state=pendingApproval&scenario=tool-authorization&stage=pendingApproval&object=AUTH-204",
+      "operation": "unauthorized-disabled"
+    }
+  ]
+}

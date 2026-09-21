@@ -1,0 +1,29 @@
+{
+  "version": "1.0",
+  "cases": [
+    {
+      "id": "lists-add-entry",
+      "page": "lists.html",
+      "query": "?theme=light&state=enabled",
+      "operation": "add-entry"
+    },
+    {
+      "id": "lists-disable-entry",
+      "page": "lists.html",
+      "query": "?theme=light&state=enabled",
+      "operation": "disable-entry"
+    },
+    {
+      "id": "features-switch-version-state",
+      "page": "features.html",
+      "query": "?theme=light&state=published",
+      "operation": "switch-version-state"
+    },
+    {
+      "id": "datasets-negative-sample-lookup",
+      "page": "datasets.html",
+      "query": "?theme=light&state=frozen",
+      "operation": "negative-sample-lookup"
+    }
+  ]
+}

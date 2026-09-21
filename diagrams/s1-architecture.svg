@@ -1,0 +1,239 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200" width="1600" height="1200" font-family="Noto Sans SC" role="img" aria-labelledby="title desc">
+  <title id="title">在线风控三层架构：确定性地基、异步疑难支线与人类统览闭环</title>
+  <desc id="desc">在线确定性执行面承载实时主干；少数高疑难低置信案件通过接口A进入异步Agent；策略模型团队在上层监控抽检，并将候选策略经过确定性门禁与人工审批后通过接口B回流规则引擎。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07111F"/>
+      <stop offset="1" stop-color="#0D1A2B"/>
+    </linearGradient>
+    <linearGradient id="foundation" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#17324A"/>
+      <stop offset="1" stop-color="#0B2035"/>
+    </linearGradient>
+    <linearGradient id="agentLane" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#17273A"/>
+      <stop offset="1" stop-color="#102033"/>
+    </linearGradient>
+    <linearGradient id="humanLane" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#132438"/>
+      <stop offset="1" stop-color="#152A3B"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#020812" flood-opacity="0.34"/>
+    </filter>
+  </defs>
+
+  <!-- ambient canvas -->
+  <rect x="0" y="0" width="1600" height="1200" fill="url(#bg)"/>
+  <circle cx="1450" cy="120" r="70" fill="#27D3C2" opacity="0.05"/>
+  <circle cx="120" cy="1070" r="80" fill="#4E8CFF" opacity="0.05"/>
+
+  <!-- title -->
+  <g font-family="Noto Sans SC">
+    <text x="64" y="76" font-size="34" font-weight="700" fill="#F4F8FC">确定性为地基，Agent 只处理疑难，人类统览并受控回流</text>
+    <text x="64" y="112" font-size="16" font-weight="500" fill="#8EA5BB">在线风控三层架构 · 实时主干不被阻塞 · 接口 A / B 明确隔离</text>
+    <rect x="1350" y="56" width="186" height="42" rx="21" fill="#0F2D32" stroke="#2DD4BF" stroke-width="1.5"/>
+    <circle cx="1375" cy="77" r="6" fill="#2DD4BF"/>
+    <text x="1392" y="83" font-size="15" font-weight="650" fill="#9EF3E8">实时主干优先</text>
+  </g>
+
+  <!-- layer labels / vertical spine -->
+  <g font-family="Noto Sans SC">
+    <line x1="88" y1="184" x2="88" y2="1088" stroke="#31475C" stroke-width="2"/>
+    <circle cx="88" cy="230" r="12" fill="#8BA6BF"/>
+    <circle cx="88" cy="520" r="12" fill="#F5B94C"/>
+    <circle cx="88" cy="870" r="14" fill="#2DD4BF"/>
+    <text x="116" y="226" font-size="13" font-weight="700" fill="#8BA6BF" letter-spacing="1.5">第三层</text>
+    <text x="116" y="250" font-size="19" font-weight="700" fill="#DCE7F2">策略 / 模型团队（人）</text>
+    <text x="116" y="516" font-size="13" font-weight="700" fill="#F5B94C" letter-spacing="1.5">第二层</text>
+    <text x="116" y="540" font-size="19" font-weight="700" fill="#FFF0C7">异步 Agent 推理</text>
+    <text x="116" y="866" font-size="13" font-weight="700" fill="#2DD4BF" letter-spacing="1.5">第一层</text>
+    <text x="116" y="890" font-size="19" font-weight="750" fill="#D8FFF9">在线确定性执行面</text>
+  </g>
+
+  <!-- third layer: human overview deck -->
+  <g filter="url(#shadow)">
+    <path d="M330 166 H1536 V374 H330 Q306 374 306 350 V190 Q306 166 330 166 Z" fill="url(#humanLane)" stroke="#2A4157" stroke-width="2"/>
+    <path d="M306 214 H286 V326 H306" fill="none" stroke="#7F9AB3" stroke-width="3"/>
+  </g>
+  <g font-family="Noto Sans SC">
+    <text x="342" y="205" font-size="14" font-weight="700" fill="#8EA5BB" letter-spacing="1.2">统览位置 · 不逐案介入</text>
+    <text x="342" y="237" font-size="22" font-weight="750" fill="#F0F5FA">人退到看板后面：监控、抽检、优化</text>
+
+    <!-- monitor icon and dashboard -->
+    <rect x="342" y="264" width="350" height="78" rx="16" fill="#0B1928" stroke="#3A536A" stroke-width="1.5"/>
+    <path d="M366 285 H404 V316 H366 Z M375 326 H395 M385 316 V326" fill="none" stroke="#7EA2C2" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M374 306 L382 297 L390 302 L399 289" fill="none" stroke="#2DD4BF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="425" y="293" font-size="16" font-weight="700" fill="#E6EEF6">看板监控</text>
+    <text x="425" y="318" font-size="14" fill="#91A7BB">实时异常率</text>
+
+    <rect x="714" y="264" width="350" height="78" rx="16" fill="#0B1928" stroke="#3A536A" stroke-width="1.5"/>
+    <circle cx="752" cy="300" r="15" fill="none" stroke="#7EA2C2" stroke-width="2.5"/>
+    <path d="M763 311 L778 326" fill="none" stroke="#7EA2C2" stroke-width="3" stroke-linecap="round"/>
+    <path d="M744 300 L750 306 L761 293" fill="none" stroke="#F5B94C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="798" y="293" font-size="16" font-weight="700" fill="#E6EEF6">人工抽检</text>
+    <text x="798" y="318" font-size="14" fill="#91A7BB">质量与审计兜底</text>
+
+    <rect x="1086" y="264" width="418" height="78" rx="16" fill="#0B1928" stroke="#3A536A" stroke-width="1.5"/>
+    <path d="M1114 314 A19 19 0 1 1 1147 293" fill="none" stroke="#7EA2C2" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M1142 284 L1149 293 L1138 296" fill="none" stroke="#2DD4BF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="1170" y="293" font-size="16" font-weight="700" fill="#E6EEF6">策略与模型优化</text>
+    <text x="1170" y="318" font-size="14" fill="#91A7BB">产出“候选”</text>
+  </g>
+
+  <!-- monitoring / sample signals upward -->
+  <path d="M1402 666 V704 H1480 V374" fill="none" stroke="#617B94" stroke-width="2" stroke-dasharray="7 7"/>
+  <path d="M1471 390 L1480 374 L1489 390" fill="none" stroke="#617B94" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="1240" y="701" font-family="Noto Sans SC" font-size="13" fill="#7F97AD">结果进入监控 / 抽检视野</text>
+
+  <!-- second layer: branch only -->
+  <g filter="url(#shadow)">
+    <path d="M612 438 H1536 V722 H612 Q588 722 588 698 V462 Q588 438 612 438 Z" fill="url(#agentLane)" stroke="#6C5328" stroke-width="2"/>
+  </g>
+  <g font-family="Noto Sans SC">
+    <rect x="620" y="466" width="168" height="32" rx="16" fill="#3B2D16" stroke="#C99332" stroke-width="1.2"/>
+    <circle cx="642" cy="482" r="5" fill="#F5B94C"/>
+    <text x="656" y="488" font-size="14" font-weight="750" fill="#FFE6AC">只啃硬骨头</text>
+    <text x="812" y="488" font-size="14" fill="#B8A98C">仅接收高疑难 / 低置信案件 · 不阻塞在线</text>
+
+    <!-- A snapshot -->
+    <rect x="620" y="526" width="246" height="140" rx="20" fill="#0D1C2C" stroke="#D2A34F" stroke-width="2"/>
+    <rect x="640" y="546" width="56" height="24" rx="12" fill="#47371D"/>
+    <text x="668" y="563" text-anchor="middle" font-size="13" font-weight="800" fill="#FFD77B">接口 A</text>
+    <path d="M811 548 H836 L844 556 V585 H811 Z M836 548 V557 H844" fill="none" stroke="#F5B94C" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M820 569 H836 M820 577 H832" fill="none" stroke="#F5B94C" stroke-width="2" stroke-linecap="round"/>
+    <text x="640" y="605" font-size="18" font-weight="750" fill="#F7E8C7">不可变事件快照</text>
+    <text x="640" y="634" font-size="14" fill="#B7AA90">稳定输入 · 接口约定 A</text>
+
+    <!-- multi-step evidence -->
+    <rect x="894" y="526" width="378" height="140" rx="20" fill="#0D1C2C" stroke="#475E73" stroke-width="1.5"/>
+    <text x="916" y="559" font-size="14" font-weight="700" fill="#8EA5BB">Agent 动态多步取证</text>
+    <circle cx="950" cy="601" r="17" fill="#21364B" stroke="#6F8AA4" stroke-width="1.5"/>
+    <path d="M944 601 H956 M950 595 V607" stroke="#A8BDD0" stroke-width="2" stroke-linecap="round"/>
+    <text x="950" y="641" text-anchor="middle" font-size="14" font-weight="650" fill="#E5EDF5">定位主体</text>
+    <path d="M980 601 H1026" stroke="#60768B" stroke-width="2"/>
+    <path d="M1018 595 L1026 601 L1018 607" fill="none" stroke="#60768B" stroke-width="2"/>
+    <circle cx="1083" cy="601" r="17" fill="#21364B" stroke="#6F8AA4" stroke-width="1.5"/>
+    <path d="M1076 605 C1080 597 1086 596 1091 602 M1079 593 H1087" fill="none" stroke="#A8BDD0" stroke-width="2" stroke-linecap="round"/>
+    <text x="1083" y="641" text-anchor="middle" font-size="14" font-weight="650" fill="#E5EDF5">拉取上下文</text>
+    <path d="M1113 601 H1159" stroke="#60768B" stroke-width="2"/>
+    <path d="M1151 595 L1159 601 L1151 607" fill="none" stroke="#60768B" stroke-width="2"/>
+    <circle cx="1216" cy="601" r="17" fill="#21364B" stroke="#6F8AA4" stroke-width="1.5"/>
+    <path d="M1208 596 H1224 M1208 602 H1220 M1208 608 H1218" fill="none" stroke="#A8BDD0" stroke-width="2" stroke-linecap="round"/>
+    <text x="1216" y="641" text-anchor="middle" font-size="14" font-weight="650" fill="#E5EDF5">比对历史</text>
+
+    <!-- output verdict -->
+    <rect x="1300" y="526" width="204" height="140" rx="20" fill="#0D1C2C" stroke="#475E73" stroke-width="1.5"/>
+    <text x="1322" y="559" font-size="14" font-weight="700" fill="#8EA5BB">输出裁决</text>
+    <rect x="1322" y="580" width="72" height="38" rx="12" fill="#3B2025" stroke="#E06A78" stroke-width="1.2"/>
+    <text x="1358" y="605" text-anchor="middle" font-size="15" font-weight="750" fill="#FFB0B8">拦截</text>
+    <rect x="1408" y="580" width="72" height="38" rx="12" fill="#15352F" stroke="#2DD4BF" stroke-width="1.2"/>
+    <text x="1444" y="605" text-anchor="middle" font-size="15" font-weight="750" fill="#93F0E4">放行</text>
+    <text x="1322" y="644" font-size="13" fill="#8EA5BB">异步完成</text>
+  </g>
+
+  <!-- branch from deterministic splitter to Agent -->
+  <polyline points="896,888 896,760 744,760 744,666" fill="none" stroke="#F5B94C" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M736 680 L744 666 L752 680" fill="none" stroke="#F5B94C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="764" y="742" width="170" height="36" rx="18" fill="#3B2D16" stroke="#C99332" stroke-width="1.2"/>
+  <text x="849" y="765" text-anchor="middle" font-family="Noto Sans SC" font-size="13" font-weight="750" fill="#FFE0A0">少数疑难案件上送</text>
+
+  <!-- first layer: heavy foundation -->
+  <g filter="url(#shadow)">
+    <path d="M330 796 H1536 V1098 H330 Q298 1098 298 1066 V828 Q298 796 330 796 Z" fill="url(#foundation)" stroke="#2DD4BF" stroke-width="3"/>
+    <path d="M298 1054 H1536 V1098 H330 Q298 1098 298 1066 Z" fill="#071725" opacity="0.92"/>
+    <path d="M320 1116 H1514" stroke="#132C40" stroke-width="12" stroke-linecap="round"/>
+  </g>
+  <g font-family="Noto Sans SC">
+    <text x="332" y="836" font-size="14" font-weight="800" fill="#63E6D6" letter-spacing="1.2">实时 · 低延迟 · 不可被阻塞</text>
+
+    <!-- intake pulse -->
+    <circle cx="354" cy="927" r="28" fill="#0C2436" stroke="#2DD4BF" stroke-width="2"/>
+    <path d="M336 927 H345 L351 916 L360 940 L368 927 H378" fill="none" stroke="#65E9D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="354" y="975" text-anchor="middle" font-size="13" fill="#9FB6C8">在线案件</text>
+
+    <!-- main trunk -->
+    <path d="M390 927 H1422" stroke="#2DD4BF" stroke-width="8" stroke-linecap="round" opacity="0.22"/>
+    <path d="M390 927 H1422" stroke="#51DFD0" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- rules engine -->
+    <rect x="438" y="866" width="326" height="122" rx="20" fill="#0B1D2D" stroke="#4FAEAC" stroke-width="2"/>
+    <path d="M468 888 L486 895 V912 C486 925 477 934 468 938 C459 934 450 925 450 912 V895 Z" fill="none" stroke="#63E6D6" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M460 911 L466 917 L477 904" fill="none" stroke="#63E6D6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="506" y="904" font-size="19" font-weight="800" fill="#E5FFFB">规则引擎</text>
+    <text x="506" y="933" font-size="14" fill="#A8C5D2">规则 / 名单 / 模型评分</text>
+    <text x="506" y="960" font-size="14" fill="#A8C5D2">按版本化阈值确定性执行</text>
+
+    <!-- splitter -->
+    <rect x="814" y="866" width="244" height="122" rx="20" fill="#0B1D2D" stroke="#F5B94C" stroke-width="2.5"/>
+    <path d="M842 894 V922 M842 906 H860 M842 922 H860" fill="none" stroke="#F5B94C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="864" cy="906" r="4" fill="#F5B94C"/>
+    <circle cx="864" cy="922" r="4" fill="#F5B94C"/>
+    <text x="890" y="906" font-size="18" font-weight="800" fill="#FFF2CF">确定性分流</text>
+    <text x="838" y="944" font-size="14" fill="#CEB986">阈值 + 白名单</text>
+    <text x="838" y="968" font-size="13" fill="#9FB1C1">明确案件留在主干</text>
+
+    <!-- direct close -->
+    <rect x="1110" y="878" width="220" height="98" rx="49" fill="#10342F" stroke="#2DD4BF" stroke-width="2"/>
+    <circle cx="1150" cy="927" r="21" fill="#174A42"/>
+    <path d="M1140 927 L1147 934 L1161 918" fill="none" stroke="#85F1E4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="1182" y="917" font-size="14" fill="#98B8B4">能确定性判</text>
+    <text x="1182" y="944" font-size="18" font-weight="800" fill="#D9FFF9">直接结案</text>
+
+    <!-- tail label -->
+    <path d="M1330 927 H1452" stroke="#51DFD0" stroke-width="3" stroke-linecap="round"/>
+    <path d="M1438 919 L1452 927 L1438 935" fill="none" stroke="#51DFD0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="1362" y="908" font-size="12" fill="#7FAEA9">实时主干</text>
+
+    <!-- hard constraint bar -->
+    <rect x="332" y="1015" width="1172" height="50" rx="14" fill="#081723" stroke="#355469" stroke-width="1.5"/>
+    <path d="M358 1028 L372 1034 V1046 C372 1055 366 1061 358 1064 C350 1061 344 1055 344 1046 V1034 Z" fill="none" stroke="#7EA2C2" stroke-width="2"/>
+    <path d="M350 1046 H366" stroke="#E06A78" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="390" y="1047" font-size="15" font-weight="750" fill="#DCE8F2">硬约束</text>
+    <text x="468" y="1047" font-size="15" fill="#A8BCCB">LLM / 开放 Agent 不进实时热路径</text>
+    <text x="822" y="1047" font-size="14" fill="#71899E">非确定性 · 不可审计</text>
+  </g>
+
+  <!-- governed feedback loop: candidate -> deterministic gate -> human approval -> B -> rule engine -->
+  <path d="M1295 342 V398 H522 V748 H450 V848" fill="none" stroke="#A3B4C4" stroke-width="3.5" stroke-linejoin="round"/>
+  <path d="M1118 390 L1104 398 L1118 406" fill="none" stroke="#A3B4C4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M838 390 L824 398 L838 406" fill="none" stroke="#A3B4C4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M570 390 L556 398 L570 406" fill="none" stroke="#A3B4C4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M441 834 L450 848 L459 834" fill="none" stroke="#A3B4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g font-family="Noto Sans SC">
+    <rect x="1128" y="385" width="132" height="34" rx="17" fill="#233044" stroke="#8EA5BB" stroke-width="1.2"/>
+    <text x="1194" y="407" text-anchor="middle" font-size="13" font-weight="700" fill="#D5E0EA">策略优化“候选”</text>
+
+    <!-- gate 1 -->
+    <rect x="850" y="380" width="238" height="72" rx="16" fill="#152538" stroke="#2DD4BF" stroke-width="2"/>
+    <circle cx="882" cy="416" r="18" fill="#123A36"/>
+    <path d="M875 416 L881 422 L891 409" fill="none" stroke="#65E9D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="912" y="407" font-size="13" font-weight="700" fill="#70E7DA">关 1</text>
+    <text x="912" y="430" font-size="16" font-weight="800" fill="#E5FFFB">确定性门禁</text>
+
+    <!-- gate 2 -->
+    <rect x="578" y="380" width="238" height="72" rx="16" fill="#152538" stroke="#F5B94C" stroke-width="2"/>
+    <circle cx="610" cy="416" r="18" fill="#3B2D16"/>
+    <path d="M602 424 C604 414 616 414 618 424 M610 412 A6 6 0 1 0 610 400 A6 6 0 0 0 610 412" fill="none" stroke="#FFD77B" stroke-width="2" stroke-linecap="round"/>
+    <text x="640" y="407" font-size="13" font-weight="700" fill="#F5C866">关 2</text>
+    <text x="640" y="430" font-size="16" font-weight="800" fill="#FFF2CF">人工审批</text>
+
+    <rect x="462" y="466" width="110" height="38" rx="19" fill="#203347" stroke="#9CB2C6" stroke-width="1.5"/>
+    <text x="517" y="491" text-anchor="middle" font-size="14" font-weight="800" fill="#F0F5FA">接口 B</text>
+    <text x="350" y="520" font-size="14" font-weight="800" fill="#E6EEF6">回流闭环</text>
+    <text x="350" y="545" font-size="14" font-weight="650" fill="#AFC1D0">两道关后才允许回流</text>
+    <text x="350" y="568" font-size="14" font-weight="650" fill="#AFC1D0">回到规则引擎</text>
+  </g>
+
+  <!-- footer legend -->
+  <g font-family="Noto Sans SC">
+    <text x="64" y="1152" font-size="12" fill="#5F788E">主干</text>
+    <line x1="104" y1="1148" x2="148" y2="1148" stroke="#2DD4BF" stroke-width="3" stroke-linecap="round"/>
+    <text x="166" y="1152" font-size="12" fill="#5F788E">疑难支线</text>
+    <line x1="238" y1="1148" x2="282" y2="1148" stroke="#F5B94C" stroke-width="3" stroke-linecap="round"/>
+    <text x="300" y="1152" font-size="12" fill="#5F788E">监控 / 抽检视野</text>
+    <line x1="418" y1="1148" x2="462" y2="1148" stroke="#617B94" stroke-width="2" stroke-dasharray="6 6"/>
+    <text x="1536" y="1152" text-anchor="end" font-size="12" fill="#5F788E">接口 A：不可变事件快照 · 接口 B：受控策略回流</text>
+  </g>
+</svg>
